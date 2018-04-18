@@ -1,0 +1,20 @@
+@function px2rem($px){
+    $rem:37.5px;
+    @return ($px / $rem) + rem;
+}
+.searchButton{
+    width: 100%;
+    background:#EEEEEE;
+    height:px2rem(50px);
+    font-size: px2rem(16px);
+    
+    .buttonN {
+        font-size:px2rem(16px);
+     width: 95%; 
+     height:px2rem(30px);
+     margin-left: 2.5%;
+     margin-top: px2rem(10px);
+     border-radius: px2rem(5px);
+     background: white;
+    }
+}
