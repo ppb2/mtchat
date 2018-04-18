@@ -1,0 +1,163 @@
+@function px2rem($px){
+    $rem:37.5px;
+    @return ($px / $rem) + rem;
+}
+
+.chatbubble-send{
+    width: 100%;
+    margin-top: px2rem(30px);
+    overflow-y: auto;
+    .chatbubble-headImg{
+        margin-left: px2rem(20px);
+        width: px2rem(40px);
+        height: px2rem(40px);
+        border-radius: px2rem(20px);
+        float: left;
+    }
+    .chatbubble-shape{
+        width: px2rem(20px);
+        height: px2rem(20px);
+        margin-top: px2rem(15px);
+        margin-left: px2rem(5px);
+        border-radius: px2rem(10px);
+        background-color: transparent;
+        box-shadow: px2rem(5px) px2rem(5px) 0 0 #7E57C2;
+        transform: rotate(-78deg);
+        float: left;
+        
+    }
+    .chatbubble-shape-bubble{
+        float: left;
+        width: px2rem(30px);
+        height: px2rem(30px);
+        .bubble-max{
+            width: px2rem(10px);
+            height:px2rem(10px);
+            margin-top:px2rem(15px);
+            margin-right:px2rem(5px);
+            border-radius: 50%;
+            background: #7E57C2;
+            float: right;
+            
+        }
+         .bubble-min{
+            width:px2rem(5px);
+            height:px2rem(5px);
+            margin-right:px2rem(2.5px);
+            margin-top:px2rem(10px);
+            border-radius: px2rem(2.5px);
+            float: right;
+            background: #7E57C2;
+            
+        }
+    }
+    .chatbubble-shape-triangle{
+        margin-top: px2rem(15px);
+        margin-left: px2rem(5px);
+        width: 0;
+        height: 0;
+        transform: rotate(-270deg);
+        margin-right:px2rem(3px);
+        border-top: px2rem(10px) solid #7E57C2;
+        border-right: px2rem(10px) solid transparent;
+        float: left;
+    }
+    .chatbubble-message{
+        
+        transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+        float: left;
+        border-radius: px2rem(10px);
+        max-width: 50%;
+        min-height: px2rem(20px);
+        font-size: px2rem(14px);
+        background: #7E57C2;
+        padding: px2rem(10px);
+        margin-left: px2rem(-5px);
+        color: #ffff;
+    }
+    
+}
+.chatbubble-receive{
+   
+    width: 100%;
+    margin-top: px2rem(30px);
+    overflow-y: auto;
+    .chatbubble-headImg{
+        margin-right: px2rem(20px);
+        width: px2rem(40px);
+        height: px2rem(40px);
+        border-radius: px2rem(20px);
+        float: right;
+        // margin-right: px2rem(20px);
+    }
+    .chatbubble-shape{
+        width: px2rem(20px);
+        height: px2rem(20px);
+        margin-top: px2rem(15px);
+        margin-right: px2rem(5px);
+        border-radius: px2rem(10px);
+        background-color: transparent;
+        box-shadow: px2rem(5px) px2rem(5px) 0 0 #80DEEA;
+        transform: rotate(-190deg);
+        float: right;
+    }
+    .chatbubble-shape-triangle{
+        margin-top: px2rem(15px);
+        margin-right: px2rem(5px);
+        width: 0;
+        height: 0;
+        margin-left:px2rem(3px);
+        border-top: px2rem(10px) solid #80DEEA;
+        border-right: px2rem(10px) solid transparent;
+        float: right;
+    }
+    .chatbubble-shape-bubble{
+        float: right;
+        width: px2rem(30px);
+        height: px2rem(30px);
+        .bubble-max{
+            width: px2rem(10px);
+            height:px2rem(10px);
+            margin-top:px2rem(15px);
+            margin-left:px2rem(5px);
+            border-radius: 50%;
+            background: #80DEEA;
+            float: left;
+            
+        }
+         .bubble-min{
+            width:px2rem(5px);
+            height:px2rem(5px);
+            margin-left:px2rem(2.5px);
+            margin-top:px2rem(10px);
+            border-radius: px2rem(2.5px);
+            float: left;
+            background: #80DEEA;
+            
+        }
+    }
+    .chatbubble-message{
+        transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+        float: right;
+        border-radius: px2rem(10px);
+        max-width: 50%;
+        font-size: px2rem(14px);
+        min-height: px2rem(20px);
+        background: #80DEEA;
+        padding: px2rem(10px);
+        margin-right: px2rem(-5px);
+        color: honeydew;
+    }
+    .chatbubble-message-teshu{
+        transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+        float: right;
+        border-radius:0 px2rem(10px) 0 px2rem(10px);
+        max-width: 50%;
+        font-size: px2rem(14px);
+        min-height: px2rem(20px);
+        background: #80DEEA;
+        padding: px2rem(10px);
+        margin-right: px2rem(-5px);
+        color: honeydew;
+    }
+}

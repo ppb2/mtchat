@@ -1,0 +1,66 @@
+@function px2rem($px){
+    $rem:37.5px;
+    @return ($px / $rem) + rem;
+}
+.chatListItem{
+    
+    width:100%;
+    height:px2rem(72px);
+    .chatAvatar{
+        width: px2rem(50px);
+        height:px2rem(50px);
+        margin-left: px2rem(10px);
+        margin-top: px2rem(11px);
+        border-radius: px2rem(25px);
+        float: left;
+        background: brown;
+    }
+    .chatContent{
+        width: 60%;
+        height:99%;
+        float: left;
+        p:first-child{
+            margin-top:px2rem(10px);
+            margin-left:px2rem(10px);
+            font-size: px2rem(18px);
+            font-weight: bold;
+            
+            color: rgba(0, 0, 0, 1);
+            line-height: px2rem(16px);
+        
+        }
+        p:last-child{
+    
+            font-size: px2rem(16px);
+            margin-top:px2rem(20px);
+            margin-left:px2rem(10px);
+            color: rgba(0, 0, 0, 0.87);
+            line-height: px2rem(16px);
+        
+        }
+    }
+    .divider{
+        clear: both;
+        height:px2rem(1px);
+        background: gainsboro;
+        width: 90%;
+        border-radius:px2rem(0.5px) ;
+        margin-left: 10% ;
+    }
+    .chatNotify{
+        width: 20%;
+        height:99%;
+        float: left;
+        .timeText{
+            margin-top:px2rem(10px);
+            text-align: center;
+            font-size: px2rem(14px);
+            color: rgba(0, 0, 0, 0.87);
+            line-height: px2rem(14px);
+        }
+        
+    }
+    &:hover{
+        background: #e0e0e0;
+    }
+}

@@ -1,0 +1,37 @@
+@function px2rem($px){
+    $rem:37.5px;
+    @return ($px / $rem) + rem;
+}
+.appbar{
+    display: -webkit-flex;
+    display: flex;
+    flex: {
+        direction: row;
+        wrap: nowrap;
+        
+    };
+    justify-content:space-between;
+    position: fixed;
+    left:0;
+    top:0;
+    z-index: 5;
+    width:100%;
+    height:px2rem(64px);
+    color:#212121;
+    background: #FFFF;
+    font: {
+        size: px2rem(20px);
+        weight: bold;
+    };
+    border-bottom: 1px solid #E0E0E0;
+    .appbar-item{
+        line-height: px2rem(64px);
+       
+    }
+    .appbar-item:nth-child(1) i{
+        margin-left:px2rem(20px);
+        font-size: px2rem(40px);
+        margin-top:px2rem(12px);
+
+    }
+ }

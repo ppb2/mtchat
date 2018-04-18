@@ -1,0 +1,23 @@
+@function px2rem($px){
+    $rem:37.5px;
+    @return ($px / $rem) + rem;
+}
+* {
+    margin: 0;
+    padding: 0;
+    border:0;
+  }
+  body {
+    font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans","wenquanyi micro hei","Hiragino Sans GB", "Hiragino Sans GB W3", Arial, sans-serif;
+  }
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+.hello{
+    background: green,
+    
+}
+button { margin: 0;
+  padding: 0;
+  border:0;}

@@ -1,0 +1,13 @@
+@function px2rem($px){
+    $rem:37.5px;
+    @return ($px / $rem) + rem;
+}
+.chatList{
+    margin: px2rem(70px) 0;
+    width:100%;
+    overflow-x: hidden;
+    overflow-y:scroll;
+}
+.chatList::-webkit-scrollbar {
+    display: none;
+}
